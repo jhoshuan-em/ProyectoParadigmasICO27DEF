@@ -1,4 +1,3 @@
-// Paso 4: Implementación del DAO con Base de Datos MySQL (VendedoresDAOMySQL)
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
