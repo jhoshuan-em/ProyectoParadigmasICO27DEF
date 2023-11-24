@@ -1,10 +1,10 @@
 import java.util.List;
 
 public interface VendedoresDAO {
-    void crearVendeores(Vendedores Vendeores);
-    Vendedores obtenerVendeoresPorId(int id);
+    void crearVendedores(Vendedores Vendedores);
+    Vendedores obtenerVendedoresPorId(int id);
     List<Vendedores> obtenerTodosLosVendedores();
-    void actualizarVendeores(Vendedores Vendeores);
-    void eliminarVendeores(int id);
+    void actualizarVendedores(Vendedores Vendedores);
+    void eliminarVendedores(int id);
 }
 
