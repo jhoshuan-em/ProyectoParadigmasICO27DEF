@@ -59,6 +59,7 @@ public class DetallesINT extends JInternalFrame {
 			modelo.addRow(objeto);
 		}
 	}
+
 	public String obtenerDetallesComoTexto() {
 		// Obtener los datos de la tabla de detalles
 		DefaultTableModel modelo = (DefaultTableModel) table.getModel();
@@ -76,4 +77,5 @@ public class DetallesINT extends JInternalFrame {
 		return detalles.toString();
 	}
 	
+
 }

@@ -8,11 +8,15 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+
 import javax.swing.JOptionPane;
 
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
+
+import java.awt.event.ActionListener;
+
 import java.awt.event.ActionEvent;
 
 public class principal extends JFrame {
@@ -103,6 +107,7 @@ public class principal extends JFrame {
 		menuPrincipal.add(mnReporte);
 
 		JMenuItem mntmDetalles = new JMenuItem("Detalles de ventas");
+
 mntmDetalles.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
         DetallesINT det = new DetallesINT();
@@ -113,6 +118,14 @@ mntmDetalles.addActionListener(new ActionListener() {
     }
 });
 mnReporte.add(mntmDetalles);
+
+		mntmDetalles.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				DetallesINT det = new DetallesINT();
+				centrarDet(det);
+			}
+		});
+		mnReporte.add(mntmDetalles);
 
 		VentanaPrincipal = new JPanel();
 		VentanaPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -142,6 +155,7 @@ mnReporte.add(mntmDetalles);
 	public JPanel getVentanaPrincipal() {
 		return VentanaPrincipal;
 	}
+  
 	private void exportarDetallesAVentasTxt(DetallesINT detallesINT) {
     try {
         // Obtener los datos de detalles de ventas desde DetallesINT
@@ -158,7 +172,5 @@ mnReporte.add(mntmDetalles);
         JOptionPane.showMessageDialog(this, "Error al exportar detalles de ventas a DetallesVentas.txt");
     }
 }
-
-
 }
 
