@@ -1,7 +1,6 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\chave\\Downloads\\mariadb-java-client-3.3.0.jar",
         "c:\\Users\\chave\\Downloads\\mysql-connector-java-8.0.26.jar"
     ]
 }
