@@ -438,7 +438,6 @@ public class VentasINT extends JInternalFrame {
 	void limpiarTabla() {
 		for (int i=0; i<modelo.getRowCount(); i++) {
 			modelo.removeRow(i);
-			i=i-1;
 		}
 	}
 	void limpiarCajas() {
