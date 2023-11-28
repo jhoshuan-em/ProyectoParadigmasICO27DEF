@@ -11,7 +11,7 @@ public class VentasMetodos {
 	int respuesta;
 	
 	public String idVentas() {
-		String IdVen="0";
+		String IdVen="";
 		String sql="SELECT MAX(IdVenta) FROM ventas";
 		try {
 			con=cn.conectar();

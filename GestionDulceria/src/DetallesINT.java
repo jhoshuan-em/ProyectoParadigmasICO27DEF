@@ -59,5 +59,4 @@ public class DetallesINT extends JInternalFrame {
 			modelo.addRow(objeto);
 		}
 	}
-
 }
