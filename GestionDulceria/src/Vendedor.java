@@ -1,4 +1,3 @@
-
 public class Vendedor {
 	int id;
 	String dni;
