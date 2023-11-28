@@ -59,4 +59,23 @@ public class DetallesINT extends JInternalFrame {
 			modelo.addRow(objeto);
 		}
 	}
+
+	public String obtenerDetallesComoTexto() {
+		// Obtener los datos de la tabla de detalles
+		DefaultTableModel modelo = (DefaultTableModel) table.getModel();
+		StringBuilder detalles = new StringBuilder();
+	
+		detalles.append("NRO\tCODIGO\tPRODUCTO\tCANTIDAD\tP.UNITARIO\tTOTAL\n");
+	
+		for (int i = 0; i < modelo.getRowCount(); i++) {
+			for (int j = 0; j < modelo.getColumnCount(); j++) {
+				detalles.append(modelo.getValueAt(i, j)).append("\t");
+			}
+			detalles.append("\n");
+		}
+	
+		return detalles.toString();
+	}
+	
+
 }
