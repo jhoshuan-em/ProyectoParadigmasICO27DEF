@@ -8,9 +8,7 @@ import javax.swing.JOptionPane;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.border.EtchedBorder;
-import javax.swing.DropMode;
 import javax.swing.JButton;
-import javax.swing.JSpinner;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -18,8 +16,6 @@ import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
-import javax.swing.SpinnerNumberModel;
-import java.awt.Color;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -452,5 +448,6 @@ public class VentasINT extends JInternalFrame {
 		textTotal.setText("");
 		textCodCliente.requestFocus();
 	}
+	
 }
 
