@@ -207,7 +207,7 @@ public class VentasINT extends JInternalFrame {
 		
 		textVende = new JTextField();
 		textVende.setEditable(false);
-		textVende.setText("Jhoshuan");
+		textVende.setText("Diego");
 		textVende.setBounds(423, 80, 164, 19);
 		panel_1.add(textVende);
 		textVende.setColumns(10);
