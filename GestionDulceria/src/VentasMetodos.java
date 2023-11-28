@@ -56,7 +56,7 @@ public class VentasMetodos {
 		return respuesta;
 	}
 	public String NoSerie() {
-		String serie="";
+		String serie="0";
 		String sql="SELECT max(NumeroSerie) FROM ventas";
 		try {
 			con=cn.conectar();
