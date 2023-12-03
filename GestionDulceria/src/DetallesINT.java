@@ -6,7 +6,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 public class DetallesINT extends JInternalFrame {
-	ProductoMetodos productoM = new ProductoMetodos();
+	ProductoDAO productoM = new ProductoDAO();
 	Producto producto = new Producto();
 	DefaultTableModel modelo = new DefaultTableModel();
 	DetalleVentas dVentas = new DetalleVentas();
