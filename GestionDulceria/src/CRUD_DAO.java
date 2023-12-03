@@ -1,7 +1,7 @@
 
 import java.util.List;
 
-public interface CRUD {
+public interface CRUD_DAO {
 	public List listar();
 	public int add(Object[] o);
 	public int actualizar(Object[] o);
