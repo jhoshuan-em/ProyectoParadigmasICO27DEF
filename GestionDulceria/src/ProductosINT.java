@@ -24,7 +24,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 public class ProductosINT extends JInternalFrame {
-	ProductoMetodos productoM = new ProductoMetodos();
+	ProductoDAO productoM = new ProductoDAO();
 	Producto producto = new Producto();
 	DefaultTableModel modelo = new DefaultTableModel();
 
