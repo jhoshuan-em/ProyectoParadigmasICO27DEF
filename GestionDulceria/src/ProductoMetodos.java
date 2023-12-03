@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductoMetodos implements CRUD {
+public class ProductoMetodos implements CRUD_DAO {
 	Connection con;
 	Conexion cn = new Conexion();
 	PreparedStatement ps;
