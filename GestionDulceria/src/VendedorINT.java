@@ -28,7 +28,7 @@ import java.io.IOException;
 
 
 public class VendedorINT extends JInternalFrame {
-	VendedorMetodos vendedorM = new VendedorMetodos();
+	VendedorDAO vendedorM = new VendedorDAO();
 	Vendedor vendedor = new Vendedor();
 	DefaultTableModel modelo = new DefaultTableModel();
 

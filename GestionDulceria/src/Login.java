@@ -14,7 +14,7 @@ import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
-	VendedorMetodos vDAO = new VendedorMetodos();
+	VendedorDAO vDAO = new VendedorDAO();
 	Vendedor vendedor = new Vendedor();
 
 	private static final long serialVersionUID = 1L;
