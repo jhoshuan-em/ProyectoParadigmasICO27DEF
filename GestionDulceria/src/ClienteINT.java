@@ -23,7 +23,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class ClienteINT extends JInternalFrame {
-	ClienteMetodos clienteM= new ClienteMetodos();
+	ClienteDAO clienteM= new ClienteDAO();
 	Cliente cliente = new Cliente();
 	DefaultTableModel modelo=new DefaultTableModel();
 

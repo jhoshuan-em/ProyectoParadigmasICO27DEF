@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VendedorMetodos implements CRUD_DAO{
+public class VendedorDAO implements CRUD_DAO{
 	PreparedStatement ps;
 	ResultSet rs;
 	Connection con;

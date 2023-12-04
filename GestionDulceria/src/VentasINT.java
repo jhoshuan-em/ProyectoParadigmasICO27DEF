@@ -31,7 +31,7 @@ import java.util.GregorianCalendar;
 
 public class VentasINT extends JInternalFrame {
 	
-	ClienteMetodos clienteM = new ClienteMetodos();
+	ClienteDAO clienteM = new ClienteDAO();
 	ProductoDAO productoM = new ProductoDAO();
 	DefaultTableModel modelo = new DefaultTableModel();
 	Producto producto = new Producto();
