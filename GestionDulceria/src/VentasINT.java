@@ -1,31 +1,18 @@
 import java.awt.EventQueue;
-
 import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.border.EtchedBorder;
-
 import javax.swing.JButton;
-
-import javax.swing.DropMode;
-import javax.swing.JButton;
-import javax.swing.JSpinner;
-
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-
 import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
-
-import javax.swing.SpinnerNumberModel;
-import java.awt.Color;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -58,10 +45,6 @@ public class VentasINT extends JInternalFrame {
 	private JTable table;
 	private JTextField textTotal;
 	private JTextField textCantidad;
-
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -75,10 +58,6 @@ public class VentasINT extends JInternalFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
-	
 	public VentasINT() {
 		
 		setTitle("Sistema de Ventas");

@@ -1,6 +1,5 @@
 import java.awt.EventQueue;
 import java.util.List;
-
 import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EtchedBorder;
@@ -10,22 +9,13 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-
-import javax.swing.ListSelectionModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-
 
 public class VendedorINT extends JInternalFrame {
 	VendedorDAO vendedorM = new VendedorDAO();
@@ -41,9 +31,6 @@ public class VendedorINT extends JInternalFrame {
 	private JTextField textEstado;
 	private JTextField textUsuario;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -57,9 +44,6 @@ public class VendedorINT extends JInternalFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public VendedorINT() {
 		setTitle("Modulo Vendedor");
 		setBounds(100, 100, 450, 429);
