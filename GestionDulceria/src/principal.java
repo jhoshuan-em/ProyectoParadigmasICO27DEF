@@ -1,6 +1,5 @@
 import java.awt.Dimension;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JPanel;
@@ -8,15 +7,10 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
-
 import javax.swing.JOptionPane;
-
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
-
-import java.awt.event.ActionListener;
-
 import java.awt.event.ActionEvent;
 
 public class principal extends JFrame {
@@ -24,9 +18,6 @@ public class principal extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public static JPanel VentanaPrincipal;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -40,9 +31,6 @@ public class principal extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public principal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -112,8 +100,6 @@ mntmDetalles.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
         DetallesINT det = new DetallesINT();
         centrarDet(det);
-
-        // Llamar a la función para exportar detalles a un archivo de texto
         exportarDetallesAVentasTxt(det);
     }
 });
@@ -158,10 +144,7 @@ mnReporte.add(mntmDetalles);
   
 	private void exportarDetallesAVentasTxt(DetallesINT detallesINT) {
     try {
-        // Obtener los datos de detalles de ventas desde DetallesINT
         String detalles = detallesINT.obtenerDetallesComoTexto();
-
-        // Crear un archivo de texto llamado DetallesVentas.txt
         FileWriter writer = new FileWriter("DetallesVentas.txt");
         writer.write(detalles);
         writer.close();

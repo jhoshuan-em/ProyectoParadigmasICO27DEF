@@ -1,6 +1,5 @@
 import java.awt.EventQueue;
 import java.util.List;
-
 import javax.swing.JInternalFrame;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -14,9 +13,6 @@ public class DetallesINT extends JInternalFrame {
 	private static final long serialVersionUID = 1L;
 	private JTable table;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -30,9 +26,6 @@ public class DetallesINT extends JInternalFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public DetallesINT() {
 		setBounds(100, 100, 450, 540);
 		getContentPane().setLayout(null);
@@ -61,7 +54,6 @@ public class DetallesINT extends JInternalFrame {
 	}
 
 	public String obtenerDetallesComoTexto() {
-		// Obtener los datos de la tabla de detalles
 		DefaultTableModel modelo = (DefaultTableModel) table.getModel();
 		StringBuilder detalles = new StringBuilder();
 	
